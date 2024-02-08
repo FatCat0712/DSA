@@ -1,8 +1,11 @@
-package linkedlist;
+package linkedlist.doublylinkedlist;
+
+import linkedlist.doublylinkedlist.DefaultDoublyLinkedList;
+import linkedlist.doublylinkedlist.DoublyLinkedList;
 
 public class test {
 	public static void main(String[] args) {
-		linkedlist.DoublyLinkedList<String> doublelinkedlist = new DefaultDoublyLinkedList<String>();
+		DoublyLinkedList<String> doublelinkedlist = new DefaultDoublyLinkedList<String>();
 		doublelinkedlist.add("h1");
 		doublelinkedlist.add("h2");
 		doublelinkedlist.add("h3");

@@ -2,8 +2,8 @@ package queue;
 
 import java.util.Iterator;
 
-import linkedlist.DefaultDoublyLinkedList;
-import linkedlist.DoublyLinkedList;
+import linkedlist.doublylinkedlist.DefaultDoublyLinkedList;
+import linkedlist.doublylinkedlist.DoublyLinkedList;
 
 public class LinkedListBasedQueue<T> implements QueueADT<T>{
 	private final DoublyLinkedList<T> linkedList = new DefaultDoublyLinkedList<>();

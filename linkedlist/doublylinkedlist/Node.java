@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.doublylinkedlist;
 
 class Node<T>{
 	private T data;

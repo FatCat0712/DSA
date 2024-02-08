@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 
-import linkedlist.DefaultDoublyLinkedList;
-import linkedlist.DoublyLinkedList;
+import linkedlist.doublylinkedlist.DefaultDoublyLinkedList;
+import linkedlist.doublylinkedlist.DoublyLinkedList;
 
 public class SeperateChainingHashTable<K,V> implements HashTableADT<K, V>{
 	private static final int DEFAULT_CAPACITY = 10;

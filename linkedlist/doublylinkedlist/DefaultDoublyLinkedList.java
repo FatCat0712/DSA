@@ -1,4 +1,4 @@
-package linkedlist;
+package linkedlist.doublylinkedlist;
 
 
 import java.util.Iterator;
@@ -82,7 +82,7 @@ public class DefaultDoublyLinkedList<T> implements DoublyLinkedList<T> {
 	public void addFirst(T element) {
 		// TODO Auto-generated method stub
 		if(isEmpty()) {
-			head = tail = new Node<>(element, tail, head);
+			head = tail = new Node<>(element, null, null);
 		}
 		else {
 			Node<T> newNode = new Node<>(element,null,head);
@@ -96,7 +96,7 @@ public class DefaultDoublyLinkedList<T> implements DoublyLinkedList<T> {
 	public void addLast(T element) {
 		// TODO Auto-generated method stub
 		if(isEmpty()) {
-			head = tail = new Node<>(element, tail, head);
+			head = tail = new Node<>(element, null, null);
 		}
 		else {
 			Node<T> newNode = new Node<>(element, tail, null);

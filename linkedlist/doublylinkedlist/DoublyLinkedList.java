@@ -1,4 +1,6 @@
-package linkedlist;
+package linkedlist.doublylinkedlist;
+
+import linkedlist.doublylinkedlist.Node;
 
 public interface DoublyLinkedList<T> extends Iterable<T> {
 	//O(n)
