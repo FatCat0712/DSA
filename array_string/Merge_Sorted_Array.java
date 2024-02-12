@@ -53,12 +53,12 @@ public class Merge_Sorted_Array {
         }
     }
     public static void main(String[] args) {
-        int[] n1 = {2,3,4,5,0,0,0};
-        int[] n2 = {3,1,6};
+        int[] n1 = {1,2,3,0,0,0};
+        int[] n2 = {2,5,6};
 
 //        merge(n1,4,n2,3);
 //        System.out.println(Arrays.toString(n1));
-        merge2(n1,4,n2,3);
+        merge2(n1,3,n2,3);
         System.out.println(Arrays.toString(n1));
     }
 }
