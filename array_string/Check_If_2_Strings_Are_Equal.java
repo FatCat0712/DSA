@@ -12,7 +12,8 @@ public class Check_If_2_Strings_Are_Equal {
             r2.append(str);
         }
 
-        return r1.toString().equals(r2.toString());
+        boolean equals = r1.toString().equals(r2.toString());
+        return equals;
     }
     public static void main(String[] args) {
 
