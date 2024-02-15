@@ -1,5 +1,8 @@
 package binarytree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MyBST {
     public TreeNode mRoot;
 
@@ -122,6 +125,65 @@ public class MyBST {
         }
         return root;
     }
+
+    // Duyệt cây
+    // Preoder : Node - Left - Right
+    public static void preOrder(TreeNode root){
+        if(root == null) return;
+        else{
+            // Duyệt current node trước
+            System.out.print(root.value + " ");
+            // Duyệt bên trái
+            preOrder(root.left);
+            // Duyệt bên phải
+            preOrder(root.right);
+        }
+
+    }
+
+    // Inorder : Left - Node - Right
+    public static void inOrder(TreeNode root){
+        if(root == null) return;
+        else{
+            // Duyệt bên trái trước
+            inOrder(root.left);
+            // Duyệt current node
+            System.out.print(root.value + " ");
+            // Duyệt bên phải
+            inOrder(root.right);
+        }
+
+    }
+
+    // Postorder : Left - Right - Node
+    public static void postOrder(TreeNode root){
+        if(root == null) return;
+        else{
+            // Duyệt bên trái trước
+            postOrder(root.left);
+            // Duyệt bên phải
+            postOrder(root.right);
+            // Duyệt current node
+            System.out.print(root.value + " ");
+        }
+
+    }
+
+    public List< Integer> preorderTraversal(TreeNode root) {
+        List<Integer> path = new ArrayList<>();
+        if(root == null){
+            return path;
+        }
+        else{
+            path.add(root.value);
+            preOrder(root.left);
+            preOrder(root.right);
+        }
+        return path;
+    }
+
+
+
 
 
 
