@@ -30,8 +30,10 @@ public class test {
         n4.left = n6; n4.right = n7;
 
         //MyBST.preOrder(n0);
-        //MyBST.inOrder(n0);
-        MyBST.postOrder(n0);
+        MyBST.inOrder(n0);
+        //MyBST.postOrder(n0);
+        System.out.println();
+        System.out.println(Maximum_Depth_of_Binary_Tree.maxDepth(n0));
         System.out.println("DONE");
     }
 }
